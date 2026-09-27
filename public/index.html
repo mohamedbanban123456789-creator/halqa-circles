@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halqa — Study Circles, Tanta</title>
+<style>*{margin:0;box-sizing:border-box}body{background:#0c0c0e;color:#ece7db;font-family:Georgia,serif;padding:36px 5vw}
+.kicker{font:11px monospace;letter-spacing:.3em;color:#c8a15a}h1{font-weight:300;font-size:clamp(34px,5vw,58px);margin:8px 0 6px}h1 em{color:#e6c988}
+.sub{color:#9b9488;margin-bottom:20px}.auth{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+input{background:#141418;border:1px solid #333;color:#ece7db;padding:10px 14px}
+button{background:#c8a15a;border:none;padding:10px 18px;border-radius:99px;cursor:pointer}
+.card{border:1px solid #2a2a30;background:#111114;padding:20px;margin:12px 0;display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
+.card h3{font-weight:400}.meta{font:11px monospace;color:#9b9488;margin-top:6px}
+.full{opacity:.55}#msg{margin-top:12px;color:#e6c988;font-size:14px}.streak{color:#c8a15a;font:12px monospace;letter-spacing:.15em}
+pre{background:#08080a;border:1px solid #2a2a30;padding:16px;margin-top:22px;font-size:12px;overflow:auto}
+</style></head>
+<body>
+<p class="kicker">HALQA · TANTA UNIVERSITY</p>
+<h1>Learn in <em>circles,</em> not alone.</h1>
+<p class="sub">Book a seat · run code live · grow a streak. <span class="streak" id="streak"></span></p>
+<div class="auth">
+<input id="name" placeholder="Name (register)"><input id="email" placeholder="Email"><input id="pass" type="password" placeholder="Password">
+<button id="reg">Register</button><button id="login">Login</button>
+</div>
+<div id="list"></div><p id="msg"></p>
+<pre>// live runner — try:  [1,2,3].map(x=>x*2)
+<input id="code" value="[1,2,3].map(x=>x*2)" style="width:60%"><button id="run">Run ▶</button>
+<code id="out"></code></pre>
+<script src="app.js"></script>
+</body>
+</html>
